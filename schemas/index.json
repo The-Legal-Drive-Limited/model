@@ -1,0 +1,15 @@
+{
+  "title": "index",
+  "allOf": [
+    { "$ref": "lawyer.json" },
+    { "$ref": "query.json" }
+  ],
+  "$defs": {
+    "FieldOfLaw": {
+      "$ref": "definitions.json#/$defs/FieldOfLaw"
+    },
+    "City": {
+      "$ref": "definitions.json#/$defs/City"
+    }
+  }
+}

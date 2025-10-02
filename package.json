@@ -1,0 +1,27 @@
+{
+  "name": "lawdbl-model",
+  "version": "0.0.1",
+  "description": "lawdbl data model",
+  "main": "index.js",
+  "types": "gen/ts/model.ts",
+  "scripts": {
+    "dev": "echo \"Error: no dev script here. See README.md.\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Legal-Drive-Limited/model.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/The-Legal-Drive-Limited/model/issues"
+  },
+  "homepage": "https://github.com/The-Legal-Drive-Limited/model#readme",
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "json-schema-to-typescript": "^15.0.4",
+    "ts-node": "^10.9.2"
+  }
+}

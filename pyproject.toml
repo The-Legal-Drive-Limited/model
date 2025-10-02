@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lawdbl-model"
+version = "0.0.1"
+description = "lawdbl data model"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+authors = [
+    {name = "The Legal Drive Limited"},
+]
+keywords = ["law", "legal", "lawyer", "pydantic", "data-model"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Legal",
+]
+
+dependencies = [
+    "pydantic>=2.0.0",
+    "email-validator>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/The-Legal-Drive-Limited/model"
+Repository = "https://github.com/The-Legal-Drive-Limited/model"
+Issues = "https://github.com/The-Legal-Drive-Limited/model/issues"
+
+[tool.setuptools.packages.find]
+where = ["gen/python"]
+include = ["lawdbl_model*"]

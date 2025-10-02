@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Query",
+  "type": "object",
+  "$defs": {
+    "FieldOfLaw": {
+      "$ref": "definitions.json#/$defs/FieldOfLaw"
+    }
+  },
+  "properties": {
+    "fieldOfLaw": {
+      "$ref": "definitions.json#/$defs/FieldOfLaw"
+    },
+    "yearsOfPracticeFrom": {
+      "type": "integer",
+      "description": "The minimum required years of practice."
+    },
+    "yearsOfPracticeTo": {
+      "type": "integer",
+      "description": "The maximum required years of practice."
+    },
+    "city": {
+      "$ref": "definitions.json#/$defs/City"
+    }
+  },
+  "required": ["fieldOfLaw"]
+}
