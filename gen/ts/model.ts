@@ -7,14 +7,17 @@
 
 export type Index = Lawyer & Query;
 export type FieldOfLaw =
+  | "Accident compensation"
   | "Animal law"
   | "Aviation law"
   | "Charity law"
   | "Civil litigation"
   | "Commercial law"
   | "Competition law"
+  | "Construction law"
   | "Corporate law"
   | "Criminal law"
+  | "Defamation"
   | "Education law"
   | "Employment law"
   | "Energy and minerals"
@@ -26,6 +29,7 @@ export type FieldOfLaw =
   | "Governance"
   | "Human rights"
   | "Immigration law"
+  | "Insolvency law"
   | "Insurance law"
   | "Intellectual property"
   | "International law"
