@@ -6,117 +6,6 @@
  */
 
 export type Index = Lawyer & Query;
-export type FieldOfLaw =
-  | "Accident compensation"
-  | "Animal law"
-  | "Aviation law"
-  | "Charity law"
-  | "Civil litigation"
-  | "Commercial law"
-  | "Competition law"
-  | "Construction law"
-  | "Corporate law"
-  | "Criminal law"
-  | "Defamation"
-  | "Education law"
-  | "Employment law"
-  | "Energy and minerals"
-  | "Environmental law"
-  | "Family law"
-  | "Financial services"
-  | "Gaming law"
-  | "General practice"
-  | "Governance"
-  | "Human rights"
-  | "Immigration law"
-  | "Insolvency law"
-  | "Insurance law"
-  | "Intellectual property"
-  | "International law"
-  | "Investments law"
-  | "Litigation"
-  | "Maori law"
-  | "Maritime law"
-  | "Media law"
-  | "Medical law"
-  | "Military law"
-  | "Private client"
-  | "Professional liability"
-  | "Property law"
-  | "Public law"
-  | "Rural law"
-  | "Social law"
-  | "Sports law"
-  | "Tax law"
-  | "Technology law"
-  | "Traffic law"
-  | "Trusts, wills and estates"
-  | "Other";
-export type City =
-  | "Auckland"
-  | "Wellington"
-  | "Christchurch"
-  | "Dunedin"
-  | "Alexandra"
-  | "Ashburton"
-  | "Balclutha"
-  | "Blenheim"
-  | "Cambridge"
-  | "Carterton"
-  | "Cromwell"
-  | "Dannevirke"
-  | "Dargaville"
-  | "Feilding"
-  | "Foxton"
-  | "Gisborne"
-  | "Gore"
-  | "Greymouth"
-  | "Hamilton"
-  | "Hastings"
-  | "Hawera"
-  | "Huntly"
-  | "Invercargill"
-  | "Kaikohe"
-  | "Kaitaia"
-  | "Kapiti"
-  | "Kawerau"
-  | "Kerikeri"
-  | "Levin"
-  | "Lower Hutt"
-  | "Masterton"
-  | "Matamata"
-  | "Morrinsville"
-  | "Motueka"
-  | "Napier"
-  | "Nelson"
-  | "New Plymouth"
-  | "Oamaru"
-  | "Opotiki"
-  | "Paeroa"
-  | "Palmerston North"
-  | "Porirua"
-  | "Pukekohe"
-  | "Queenstown"
-  | "Rotorua"
-  | "Stratford"
-  | "Taupo"
-  | "Tauranga"
-  | "Te Anau"
-  | "Te Awamutu"
-  | "Te Puke"
-  | "Thames"
-  | "Timaru"
-  | "Tokoroa"
-  | "Upper Hutt"
-  | "Wairoa"
-  | "Wanaka"
-  | "Warkworth"
-  | "Wellsford"
-  | "Westport"
-  | "Whakatane"
-  | "Whanganui"
-  | "Whangamata"
-  | "Whitianga";
 
 export interface Lawyer {
   /**
@@ -147,4 +36,118 @@ export interface Query {
   yearsOfPracticeTo?: number;
   city?: City;
   [k: string]: unknown;
+}
+
+export const enum FieldOfLaw {
+  "Accident compensation" = "Accident compensation",
+  "Animal law" = "Animal law",
+  "Aviation law" = "Aviation law",
+  "Charity law" = "Charity law",
+  "Civil litigation" = "Civil litigation",
+  "Commercial law" = "Commercial law",
+  "Competition law" = "Competition law",
+  "Construction law" = "Construction law",
+  "Corporate law" = "Corporate law",
+  "Criminal law" = "Criminal law",
+  Defamation = "Defamation",
+  "Education law" = "Education law",
+  "Employment law" = "Employment law",
+  "Energy and minerals" = "Energy and minerals",
+  "Environmental law" = "Environmental law",
+  "Family law" = "Family law",
+  "Financial services" = "Financial services",
+  "Gaming law" = "Gaming law",
+  "General practice" = "General practice",
+  Governance = "Governance",
+  "Human rights" = "Human rights",
+  "Immigration law" = "Immigration law",
+  "Insolvency law" = "Insolvency law",
+  "Insurance law" = "Insurance law",
+  "Intellectual property" = "Intellectual property",
+  "International law" = "International law",
+  "Investments law" = "Investments law",
+  Litigation = "Litigation",
+  "Maori law" = "Maori law",
+  "Maritime law" = "Maritime law",
+  "Media law" = "Media law",
+  "Medical law" = "Medical law",
+  "Military law" = "Military law",
+  "Private client" = "Private client",
+  "Professional liability" = "Professional liability",
+  "Property law" = "Property law",
+  "Public law" = "Public law",
+  "Rural law" = "Rural law",
+  "Social law" = "Social law",
+  "Sports law" = "Sports law",
+  "Tax law" = "Tax law",
+  "Technology law" = "Technology law",
+  "Traffic law" = "Traffic law",
+  "Trusts, wills and estates" = "Trusts, wills and estates",
+  Other = "Other"
+}
+export const enum City {
+  Auckland = "Auckland",
+  Wellington = "Wellington",
+  Christchurch = "Christchurch",
+  Dunedin = "Dunedin",
+  Alexandra = "Alexandra",
+  Ashburton = "Ashburton",
+  Balclutha = "Balclutha",
+  Blenheim = "Blenheim",
+  Cambridge = "Cambridge",
+  Carterton = "Carterton",
+  Cromwell = "Cromwell",
+  Dannevirke = "Dannevirke",
+  Dargaville = "Dargaville",
+  Feilding = "Feilding",
+  Foxton = "Foxton",
+  Gisborne = "Gisborne",
+  Gore = "Gore",
+  Greymouth = "Greymouth",
+  Hamilton = "Hamilton",
+  Hastings = "Hastings",
+  Hawera = "Hawera",
+  Huntly = "Huntly",
+  Invercargill = "Invercargill",
+  Kaikohe = "Kaikohe",
+  Kaitaia = "Kaitaia",
+  Kapiti = "Kapiti",
+  Kawerau = "Kawerau",
+  Kerikeri = "Kerikeri",
+  Levin = "Levin",
+  "Lower Hutt" = "Lower Hutt",
+  Masterton = "Masterton",
+  Matamata = "Matamata",
+  Morrinsville = "Morrinsville",
+  Motueka = "Motueka",
+  Napier = "Napier",
+  Nelson = "Nelson",
+  "New Plymouth" = "New Plymouth",
+  Oamaru = "Oamaru",
+  Opotiki = "Opotiki",
+  Paeroa = "Paeroa",
+  "Palmerston North" = "Palmerston North",
+  Porirua = "Porirua",
+  Pukekohe = "Pukekohe",
+  Queenstown = "Queenstown",
+  Rotorua = "Rotorua",
+  Stratford = "Stratford",
+  Taupo = "Taupo",
+  Tauranga = "Tauranga",
+  "Te Anau" = "Te Anau",
+  "Te Awamutu" = "Te Awamutu",
+  "Te Puke" = "Te Puke",
+  Thames = "Thames",
+  Timaru = "Timaru",
+  Tokoroa = "Tokoroa",
+  "Upper Hutt" = "Upper Hutt",
+  Wairoa = "Wairoa",
+  Wanaka = "Wanaka",
+  Warkworth = "Warkworth",
+  Wellsford = "Wellsford",
+  Westport = "Westport",
+  Whakatane = "Whakatane",
+  Whanganui = "Whanganui",
+  Whangamata = "Whangamata",
+  Whitianga = "Whitianga"
 }
