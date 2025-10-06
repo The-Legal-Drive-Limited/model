@@ -14,6 +14,15 @@ npm install
 
 Generated sources will now be in the `gen` directory. It's fine to check these in - client codebases need to refer to them as a GitHub source archive. But do NOT edit the generated sources.
 
+## Releasing
+
+You can only consume the generated types/classes once you have a release. Commit and push your changes using cursor as usual, then:
+
+```bash
+git tag -a v1.2.3 -m "Tag message"
+git push --tags
+```
+
 ## Using these types/classes in other codebases
 
 ### Python
