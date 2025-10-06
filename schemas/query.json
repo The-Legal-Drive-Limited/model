@@ -23,5 +23,5 @@
       "$ref": "definitions.json#/$defs/City"
     }
   },
-  "required": ["fieldOfLaw"]
+  "required": []
 }

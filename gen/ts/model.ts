@@ -25,7 +25,7 @@ export interface Lawyer {
   [k: string]: unknown;
 }
 export interface Query {
-  fieldOfLaw: FieldOfLaw;
+  fieldOfLaw?: FieldOfLaw;
   /**
    * The minimum required years of practice.
    */
