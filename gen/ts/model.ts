@@ -38,7 +38,7 @@ export interface Query {
   [k: string]: unknown;
 }
 
-export const enum FieldOfLaw {
+export enum FieldOfLaw {
   "Accident compensation" = "Accident compensation",
   "Animal law" = "Animal law",
   "Aviation law" = "Aviation law",
@@ -85,7 +85,7 @@ export const enum FieldOfLaw {
   "Trusts, wills and estates" = "Trusts, wills and estates",
   Other = "Other"
 }
-export const enum City {
+export enum City {
   Auckland = "Auckland",
   Wellington = "Wellington",
   Christchurch = "Christchurch",
