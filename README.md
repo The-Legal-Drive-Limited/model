@@ -23,6 +23,8 @@ git tag -a v1.2.3 -m "Tag message"
 git push --tags
 ```
 
+Now go to the tag on the GitHub site (eg. [v0.4.0](https://github.com/The-Legal-Drive-Limited/model/releases/tag/v0.4.0])) and `Create release from tag`. The releave title can be the same as the tag (eg. `v0.4.0`).
+
 ## Using these types/classes in other codebases
 
 ### Python
