@@ -9,7 +9,18 @@
   },
   "properties": {
     "fieldOfLaw": {
-      "$ref": "definitions.json#/$defs/FieldOfLaw"
+      "oneOf": [
+        {
+          "$ref": "definitions.json#/$defs/FieldOfLaw"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "definitions.json#/$defs/FieldOfLaw"
+          },
+          "minItems": 1
+        }
+      ]
     },
     "yearsOfPracticeFrom": {
       "type": "integer",
