@@ -9,19 +9,57 @@ export type Index = Lawyer & Query;
 
 export interface Lawyer {
   /**
-   * The lawyers's unique identifier in the lawdbl database.
+   * The lawyers's unique identifier in the lawdbl database
    */
   id: number;
   /**
-   * The lawyers's full name.
+   * The lawyers's full name
    */
   informalName: string;
   /**
-   * The lawyers's email address.
+   * The lawyers's email address
    */
   email: string;
+  /**
+   * Comma separated list of legal fields in which this lawyer practices
+   */
+  legalField?: string;
+  /**
+   * Address part
+   */
+  streetAddress?: string;
+  /**
+   * Address part
+   */
+  city?: string;
+  /**
+   * Address part
+   */
+  postcode?: string;
+  /**
+   * Use this to determine how many years' experience a lawyer has
+   */
+  admissionDate?: string;
+  /**
+   * The lawyer's workplace
+   */
+  workplace?: string;
+  /**
+   * The lawyer's own website URL
+   */
+  link?: string;
+  /**
+   * The lawyer's LinkedIn profile URL
+   */
+  linkedinLink?: string;
+  /**
+   * The lawyer's NZ law society profile URL
+   */
+  nzlsLink?: string;
   isBarrister?: boolean;
   isSolo?: boolean;
+  isInHouse?: boolean;
+  isEmployee?: boolean;
   [k: string]: unknown;
 }
 export interface Query {

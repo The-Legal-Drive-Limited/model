@@ -5,22 +5,70 @@
   "properties": {
     "id": {
       "type": "integer",
-      "description": "The lawyers's unique identifier in the lawdbl database."
+      "description": "The lawyers's unique identifier in the lawdbl database"
     },
     "informalName": {
       "type": "string",
-      "description": "The lawyers's full name."
+      "description": "The lawyers's full name"
     },
     "email": {
       "type": "string",
       "format": "email",
-      "description": "The lawyers's email address."
+      "description": "The lawyers's email address"
+    },
+    "legalField": {
+      "type": "string",
+      "description": "Comma separated list of legal fields in which this lawyer practices"
+    },
+    "streetAddress": {
+      "type": "string",
+      "description": "Address part"
+    },
+    "city": {
+      "type": "string",
+      "description": "Address part"
+    },
+    "postcode": {
+      "type": "string",
+      "description": "Address part"
+    },
+    "admissionDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Use this to determine how many years' experience a lawyer has"
+    },
+    "workplace": {
+      "type": "string",
+      "description": "The lawyer's workplace"
+    },
+    "link": {
+      "type": "string",
+      "format": "uri",
+      "description": "The lawyer's own website URL"
+    },
+    "linkedinLink": {
+      "type": "string",
+      "format": "uri",
+      "description": "The lawyer's LinkedIn profile URL"
+    },
+    "nzlsLink": {
+      "type": "string",
+      "format": "uri",
+      "description": "The lawyer's NZ law society profile URL"
     },
     "isBarrister": {
       "type": "boolean",
       "default": false
     },
     "isSolo": {
+      "type": "boolean",
+      "default": false
+    },
+    "isInHouse": {
+      "type": "boolean",
+      "default": false
+    },
+    "isEmployee": {
       "type": "boolean",
       "default": false
     }
