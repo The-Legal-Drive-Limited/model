@@ -35,6 +35,7 @@ Now go to the tag on the GitHub site (eg. [v0.4.0](https://github.com/The-Legal-
     ```python
     from lawdbl_model import Lawyer
     ```
+1. Note: on subsequent version bumps, you may need to uninstall and reinstall the module in order to get FastAPI to pick up the new version.
 
 ### Typescript
 
