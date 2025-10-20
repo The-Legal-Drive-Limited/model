@@ -73,6 +73,10 @@ export interface Query {
    */
   yearsOfPracticeTo?: number;
   city?: City;
+  /**
+   * The name of the workplace of the lawyer, as free text.
+   */
+  workplace?: string;
   [k: string]: unknown;
 }
 
