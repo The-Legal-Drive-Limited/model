@@ -77,6 +77,8 @@ export interface Query {
    * The name of the workplace of the lawyer, as free text.
    */
   workplace?: string;
+  sortBy?: SortBy;
+  sortOrder?: SortOrder;
   [k: string]: unknown;
 }
 
@@ -192,4 +194,13 @@ export enum City {
   Whanganui = "Whanganui",
   Whangamata = "Whangamata",
   Whitianga = "Whitianga"
+}
+export enum SortBy {
+  Name = "Name",
+  YearsOfPractice = "YearsOfPractice",
+  Workplace = "Workplace"
+}
+export enum SortOrder {
+  Ascending = "Ascending",
+  Descending = "Descending"
 }

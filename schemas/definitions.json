@@ -119,6 +119,21 @@
         "Trusts, wills and estates",
         "Other"
       ]
+    },
+    "SortBy": {
+      "type": "string",
+      "enum": [
+        "Name",
+        "YearsOfPractice",
+        "Workplace"
+      ]
+    },
+    "SortOrder": {
+      "type": "string",
+      "enum": [
+        "Ascending",
+        "Descending"
+      ]
     }
   }
 }

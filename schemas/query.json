@@ -7,6 +7,7 @@
       "$ref": "definitions.json#/$defs/FieldOfLaw"
     }
   },
+  "$comment": "There's no need to add page or size here. fastapi_pagination handles them.",
   "properties": {
     "fieldOfLaw": {
       "oneOf": [
@@ -36,6 +37,12 @@
     "workplace": {
       "type": "string",
       "description": "The name of the workplace of the lawyer, as free text."
+    },
+    "sortBy": {
+      "$ref": "definitions.json#/$defs/SortBy"
+    },
+    "sortOrder": {
+      "$ref": "definitions.json#/$defs/SortOrder"
     }
   },
   "required": []
