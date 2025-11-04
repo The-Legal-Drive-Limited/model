@@ -10,6 +10,12 @@
     },
     "City": {
       "$ref": "definitions.json#/$defs/City"
+    },
+    "SortBy": {
+      "$ref": "definitions.json#/$defs/SortBy"
+    },
+    "SortOrder": {
+      "$ref": "definitions.json#/$defs/SortOrder"
     }
   }
 }
