@@ -5,6 +5,15 @@
   "$defs": {
     "FieldOfLaw": {
       "$ref": "definitions.json#/$defs/FieldOfLaw"
+    },
+    "City": {
+      "$ref": "definitions.json#/$defs/City"
+    },
+    "SortBy": {
+      "$ref": "definitions.json#/$defs/SortBy"
+    },
+    "SortOrder": {
+      "$ref": "definitions.json#/$defs/SortOrder"
     }
   },
   "$comment": "There's no need to add page or size here. fastapi_pagination handles them.",

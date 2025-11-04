@@ -6,18 +6,23 @@ used in the LawDBL (Legal Database) system.
 """
 
 from .model import (
+    City,
+    FieldOfLaw,
+    Index,
     Lawyer,
     Query,
-    Index,
-    FieldOfLaw,
-    City,
+    SortBy,
+    SortOrder,
 )
 
 __version__ = "0.0.1"
+
 __all__ = [
-    "Lawyer",
-    "Query", 
-    "Index",
-    "FieldOfLaw",
     "City",
+    "FieldOfLaw",
+    "Index",
+    "Lawyer",
+    "Query",
+    "SortBy",
+    "SortOrder"
 ]
