@@ -34,8 +34,11 @@
     },
     "admissionDate": {
       "type": "string",
-      "format": "date",
-      "description": "Use this to determine how many years' experience a lawyer has"
+      "format": "date"
+    },
+    "yearsOfPractice": {
+      "type": "integer",
+      "description": "The number of years the lawyer has been practicing, based solely on the admission date"
     },
     "workplace": {
       "type": "string",

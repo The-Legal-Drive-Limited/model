@@ -36,10 +36,11 @@ export interface Lawyer {
    * Address part
    */
   postcode?: string;
-  /**
-   * Use this to determine how many years' experience a lawyer has
-   */
   admissionDate?: string;
+  /**
+   * The number of years the lawyer has been practicing, based solely on the admission date
+   */
+  yearsOfPractice?: number;
   /**
    * The lawyer's workplace
    */
