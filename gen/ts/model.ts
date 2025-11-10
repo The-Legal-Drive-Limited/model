@@ -112,6 +112,7 @@ export enum FieldOfLaw {
   "International law" = "International law",
   "Investments law" = "Investments law",
   Litigation = "Litigation",
+  "Local government" = "Local government",
   "Maori law" = "Maori law",
   "Maritime law" = "Maritime law",
   "Media law" = "Media law",
