@@ -78,6 +78,10 @@ export interface Query {
    * The name of the workplace of the lawyer, as free text.
    */
   workplace?: string;
+  /**
+   * Any part of the name of the lawyer, as free text.
+   */
+  name?: string;
   sortBy?: SortBy;
   sortOrder?: SortOrder;
   [k: string]: unknown;

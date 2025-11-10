@@ -47,6 +47,10 @@
       "type": "string",
       "description": "The name of the workplace of the lawyer, as free text."
     },
+    "name": {
+      "type": "string",
+      "description": "Any part of the name of the lawyer, as free text."
+    },
     "sortBy": {
       "$ref": "definitions.json#/$defs/SortBy"
     },
