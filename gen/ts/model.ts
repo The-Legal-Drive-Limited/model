@@ -84,6 +84,10 @@ export interface Query {
   name?: string;
   sortBy?: SortBy;
   sortOrder?: SortOrder;
+  /**
+   * If true, include lawyers who work in-house and not at a law firm in the query results.
+   */
+  includeInHouse?: boolean;
   [k: string]: unknown;
 }
 

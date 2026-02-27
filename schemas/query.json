@@ -56,6 +56,11 @@
     },
     "sortOrder": {
       "$ref": "definitions.json#/$defs/SortOrder"
+    },
+    "includeInHouse": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, include lawyers who work in-house and not at a law firm in the query results."
     }
   },
   "required": []
