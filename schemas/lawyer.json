@@ -32,6 +32,10 @@
       "type": "string",
       "description": "Address part"
     },
+    "country": {
+      "type": "string",
+      "description": "Address part. Absent or 'New Zealand' means the address is in New Zealand, in which case `city` is expected to be a member of the City enum. Any other value marks an overseas office, whose city the City enum cannot express."
+    },
     "admissionDate": {
       "type": "string",
       "format": "date"
