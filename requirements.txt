@@ -1,5 +1,11 @@
 # Development dependencies
-datamodel-code-generator
+# Pinned deliberately. This generator's OUTPUT STYLE changes between versions:
+# 0.76.0 emits `str | None` where the version used in Feb 2026 emitted
+# `Optional[str]`, which rewrites the whole of gen/python for reasons that have
+# nothing to do with any schema change. Unpinned, every regeneration risked a
+# 200-line diff nobody asked for. Bump this on purpose, and regenerate in the
+# same commit so the churn is reviewable on its own.
+datamodel-code-generator==0.76.0
 
 # Runtime dependencies (for the generated package)
 pydantic>=2.0.0
