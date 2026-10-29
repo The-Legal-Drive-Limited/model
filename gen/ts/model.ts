@@ -110,6 +110,7 @@ export enum FieldOfLaw {
   "Education law" = "Education law",
   "Employment law" = "Employment law",
   "Energy and minerals" = "Energy and minerals",
+  "Entertainment law" = "Entertainment law",
   "Environmental law" = "Environmental law",
   "Family law" = "Family law",
   "Financial services" = "Financial services",
