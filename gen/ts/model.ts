@@ -65,6 +65,10 @@ export interface Lawyer {
   isSolo?: boolean;
   isInHouse?: boolean;
   isEmployee?: boolean;
+  /**
+   * True when the lawyer was admitted within the last 365 days (admitted on day D: a graduate through D+364). Derived solely from admissionDate at read time and never stored, so it cannot go stale. Absent when the admission date is unknown, which is not the same as false. A graduate typically has no legalField yet because they have no public profile; that is expected, not a data gap.
+   */
+  isGraduate?: boolean;
   [k: string]: unknown;
 }
 export interface Query {
