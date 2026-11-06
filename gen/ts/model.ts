@@ -96,6 +96,10 @@ export interface Query {
    * If true, include lawyers who work in-house and not at a law firm in the query results.
    */
   includeInHouse?: boolean;
+  /**
+   * If true, return only graduates: lawyers admitted within the last 365 days (see Lawyer.isGraduate). A lawyer whose admission date is unknown is not a graduate for this filter. Graduates usually have no legal field yet, so combine this with no fieldOfLaw to see them all.
+   */
+  graduatesOnly?: boolean;
   [k: string]: unknown;
 }
 
