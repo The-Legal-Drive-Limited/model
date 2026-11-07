@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkplaceSuggestion",
+  "type": "object",
+  "description": "One office offered while typing in a workplace search box. Only offices with at least one listed lawyer are offered, so every suggestion returns results.",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The office's name as stored in the workplace table"
+    },
+    "city": {
+      "type": "string",
+      "description": "The office's city, to tell branches of one firm apart. Absent when not recorded."
+    },
+    "lawyerCount": {
+      "type": "integer",
+      "description": "How many listed (non-archived) lawyers work at this office"
+    }
+  },
+  "required": [
+    "name",
+    "lawyerCount"
+  ]
+}

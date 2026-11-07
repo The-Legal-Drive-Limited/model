@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Index = Lawyer & Query;
+export type Index = Lawyer & Query & WorkplaceSuggestion;
 
 export interface Lawyer {
   /**
@@ -25,15 +25,15 @@ export interface Lawyer {
    */
   legalField?: string;
   /**
-   * Address part
+   * Address part: the street address of the lawyer's office (the workplace row), not of the lawyer
    */
   streetAddress?: string;
   /**
-   * Address part
+   * Address part: the city of the lawyer's office (the workplace row)
    */
   city?: string;
   /**
-   * Address part
+   * Address part: the postcode of the lawyer's office (the workplace row)
    */
   postcode?: string;
   /**
@@ -46,7 +46,7 @@ export interface Lawyer {
    */
   yearsOfPractice?: number;
   /**
-   * The lawyer's workplace
+   * The name of the lawyer's office as stored in the workplace table, one row per office (so a branch reads e.g. 'Russell McVeagh - Wellington'). Falls back to the lawyer's own free-text firm name only when they have no office.
    */
   workplace?: string;
   /**
@@ -100,6 +100,24 @@ export interface Query {
    * If true, return only graduates: lawyers admitted within the last 365 days (see Lawyer.isGraduate). A lawyer whose admission date is unknown is not a graduate for this filter. Graduates usually have no legal field yet, so combine this with no fieldOfLaw to see them all.
    */
   graduatesOnly?: boolean;
+  [k: string]: unknown;
+}
+/**
+ * One office offered while typing in a workplace search box. Only offices with at least one listed lawyer are offered, so every suggestion returns results.
+ */
+export interface WorkplaceSuggestion {
+  /**
+   * The office's name as stored in the workplace table
+   */
+  name: string;
+  /**
+   * The office's city, to tell branches of one firm apart. Absent when not recorded.
+   */
+  city?: string;
+  /**
+   * How many listed (non-archived) lawyers work at this office
+   */
+  lawyerCount: number;
   [k: string]: unknown;
 }
 

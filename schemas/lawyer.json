@@ -22,15 +22,15 @@
     },
     "streetAddress": {
       "type": "string",
-      "description": "Address part"
+      "description": "Address part: the street address of the lawyer's office (the workplace row), not of the lawyer"
     },
     "city": {
       "type": "string",
-      "description": "Address part"
+      "description": "Address part: the city of the lawyer's office (the workplace row)"
     },
     "postcode": {
       "type": "string",
-      "description": "Address part"
+      "description": "Address part: the postcode of the lawyer's office (the workplace row)"
     },
     "country": {
       "type": "string",
@@ -46,7 +46,7 @@
     },
     "workplace": {
       "type": "string",
-      "description": "The lawyer's workplace"
+      "description": "The name of the lawyer's office as stored in the workplace table, one row per office (so a branch reads e.g. 'Russell McVeagh - Wellington'). Falls back to the lawyer's own free-text firm name only when they have no office."
     },
     "link": {
       "type": "string",

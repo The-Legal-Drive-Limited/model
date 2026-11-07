@@ -2,7 +2,8 @@
   "title": "index",
   "allOf": [
     { "$ref": "lawyer.json" },
-    { "$ref": "query.json" }
+    { "$ref": "query.json" },
+    { "$ref": "workplace_suggestion.json" }
   ],
   "$defs": {
     "FieldOfLaw": {
