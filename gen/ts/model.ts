@@ -161,6 +161,7 @@ export enum FieldOfLaw {
   "Professional liability" = "Professional liability",
   "Property law" = "Property law",
   "Public law" = "Public law",
+  "Regulatory and compliance" = "Regulatory and compliance",
   "Rural law" = "Rural law",
   "Social law" = "Social law",
   "Sports law" = "Sports law",
