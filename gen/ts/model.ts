@@ -17,9 +17,9 @@ export interface Lawyer {
    */
   informalName: string;
   /**
-   * The lawyers's email address
+   * The lawyers's email address. Absent when none is recorded: many lawyers, most new admittees among them, have no public email yet, and they are still lawyers worth listing.
    */
-  email: string;
+  email?: string;
   /**
    * Comma separated list of legal fields in which this lawyer practices
    */
